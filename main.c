@@ -13,29 +13,29 @@ int main() {
     int frecuencias[MAX_SYMBOLS];
     int codigo[10];
     char texto[100];
-    //const char *texto = "Pinocho se comio un bizcocho.";
+    //Texto de ejemplo: Pinocho se comio un bizcocho.
 
-    printf("Ingresa un string: ");
+    printf("Ingresa un texto: ");
     fgets(texto, sizeof(texto), stdin);
     texto[strcspn(texto, "\n")] = '\0';
 
-
     calcularFrecuencias(texto, frecuencias);
     fila = enfilarFrecuencias(fila, frecuencias);
-    //mostrarFila(fila);
     raiz = crearArbol(fila);
-
+    printf("\nCodigos:\n");
     lista = obtenerCodigosHuffman(raiz, lista, codigo, indice);
 
-    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     printf("\nMensaje original:\n");
     printf("%s", texto);
+    printf("\n");
 
     printf("\nMensaje codificado:\n");
     mensajeCodificado = codificarMensaje(lista, texto, mensajeCodificado, &indice);
+    printf("\n");
 
     printf("\nMensaje decodificado:\n");
     decodificarMensaje(lista, mensajeCodificado, &indice);
+    printf("\n");
 
     return 0;
 }
