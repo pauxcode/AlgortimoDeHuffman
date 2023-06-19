@@ -1,4 +1,5 @@
 #include "arbolDeHuffman.h"
+
 NodoArbol *crearNodoArbol(char caracter, int frecuencia) {
     NodoArbol *nodo = (NodoArbol *) malloc(sizeof(NodoArbol));
     nodo->caracter = caracter;

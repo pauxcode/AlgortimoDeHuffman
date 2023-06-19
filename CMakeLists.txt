@@ -3,4 +3,4 @@ project(AlgoritmoDeHuffman C)
 
 set(CMAKE_C_STANDARD 23)
 
-add_executable(AlgoritmoDeHuffman main.c arbolDeHuffman.c filaDePrioridad.c estructuras.h filaDePrioridad.h arbolDeHuffman.h)
+add_executable(AlgoritmoDeHuffman main.c arbolDeHuffman.c filaDePrioridad.c filaDePrioridad.h arbolDeHuffman.h codigosHuffman.c codigosHuffman.h lista.c lista.h frecuencias.c frecuencias.h estructuras.h)

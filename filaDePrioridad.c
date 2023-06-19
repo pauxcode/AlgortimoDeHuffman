@@ -1,5 +1,5 @@
 #include "filaDePrioridad.h"
-#include <stdio.h>
+
 Fila *enfilar(Fila *fila, NodoArbol *nodoArbol) {
     Fila *nuevoEnFila, *aux;
 

@@ -1,9 +1,5 @@
-typedef struct NodoLista {
-    int array[10];
-    char caracter;
-    struct NodoLista *siguiente;
-} NodoLista;
-
+#ifndef ALGORITMODEHUFFMAN_ESTRUCTURAS_H
+#define ALGORITMODEHUFFMAN_ESTRUCTURAS_H
 typedef struct Fila {
     struct NodoArbol *nodo;
     struct Fila *siguiente;
@@ -18,7 +14,7 @@ typedef struct NodoArbol {
 typedef struct Lista {
     char caracter;
     int indice;
-    int codigo[10];
-    int *codigo2;
+    int *codigo;
     struct Lista *siguiente;
 } Lista;
+#endif //ALGORITMODEHUFFMAN_ESTRUCTURAS_H
